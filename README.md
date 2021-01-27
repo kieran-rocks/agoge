@@ -1,5 +1,5 @@
 # agoge
-Test text.
+Test text2.
 
 ## Project setup
 ```
