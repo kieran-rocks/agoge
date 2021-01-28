@@ -36,6 +36,8 @@ export default class Home extends Vue {}
         position: absolute;
         left: 0;
         top: 0;
+        width: 100%;
+        height: auto;
         filter: brightness(50%);
         z-index: -1;
     }
