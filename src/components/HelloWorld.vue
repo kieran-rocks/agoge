@@ -1,7 +1,6 @@
 <template>
     <div class="p-grid test">
-        <div class="p-col"><Button label="Submit" /></div>
-        <div class="p-col"><Button label="Submit" /></div>
+       
     </div>
 </template>
 
