@@ -1,7 +1,5 @@
 <template>
-    <div class="p-grid test">
-       
-    </div>
+    <div class="p-grid test"></div>
 </template>
 
 <script lang="ts">

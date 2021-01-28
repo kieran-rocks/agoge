@@ -1,5 +1,4 @@
 <template>
-    <div class="black-background"></div>
     <img class="background-image" src="./assets/download.jpeg" />
     <div id="nav">
         <Navigation />
@@ -33,24 +32,12 @@ export default class Home extends Vue {}
         top: 0;
     }
 
-    .black-background {
-        background: black;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -2;
-    }
-
     .background-image {
         position: absolute;
         left: 0;
         top: 0;
-        height: 100%;
-        width: 100%;
+        filter: brightness(50%);
         z-index: -1;
-        opacity: 0.6;
     }
 
     /* Rules for sizing the icon. */
