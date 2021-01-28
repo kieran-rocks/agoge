@@ -1,6 +1,5 @@
 <template>
     <div class="home">
-        <img alt="Vue logo" src="../assets/logo.png" />
         <HelloWorld />
     </div>
 </template>
@@ -8,10 +7,12 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
 
 @Options({
     components: {
-        HelloWorld
+        HelloWorld,
+        Navigation
     }
 })
 export default class Home extends Vue {}
