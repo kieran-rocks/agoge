@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import Button from "primevue/button";
+import { Options, Vue } from 'vue-class-component';
+import Button from 'primevue/button';
 
 @Options({
     components: {
