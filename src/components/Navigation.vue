@@ -29,23 +29,15 @@ export default {};
             width: 4rem;
         }
         a {
+            color: white;
             font-weight: 400;
+            font-size: 2rem;
+            padding: 2px 10px;
+            cursor: pointer;
             text-decoration: none;
-            font-size: 2rem;
-            padding: 2px 10px;
-            cursor: pointer;
-            &:hover {
-                color: #7ca971;
-            }
         }
-
-        .router {
-            font-size: 2rem;
-            padding: 2px 10px;
-            cursor: pointer;
-            &:hover {
-                color: #7ca971;
-            }
+        .router-link-active {
+            text-decoration: underline;
         }
     }
 }
