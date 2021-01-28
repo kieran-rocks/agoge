@@ -29,8 +29,8 @@
                 youth athletes that are currently underserved in the area, to
                 develop into strong athletes of their sport.
             </li>
-            
-			<h3>Facilities</h3>
+
+            <h3>Facilities</h3>
 
             <li>
                 Private Facility: Our private performance center provides any
@@ -40,8 +40,8 @@
                 to reach their goals:
             </li>
             <li>Photos: TODO</li>
-            
-			<h3>Head Coach</h3>
+
+            <h3>Head Coach</h3>
 
             <li>
                 Head Coach Mat Strong has a variety of experience to pull from

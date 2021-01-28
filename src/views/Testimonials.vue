@@ -1,5 +1,5 @@
 <template>
-	<h1>Testimonials</h1>
+    <h1>Testimonials</h1>
 
     <div>
         <ul>
