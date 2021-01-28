@@ -4,7 +4,7 @@
         <img alt="Vue logo" src="../assets/mat.jpg" />
     </div>
 
-    <div>
+    <div class="background-container">
         <ul>
             <li>
                 Agoge Strong Performance Training provides both in-person and
@@ -70,3 +70,9 @@
         </ul>
     </div>
 </template>
+
+<style lang="scss" scoped>
+.background-container {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+</style>

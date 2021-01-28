@@ -1,23 +1,21 @@
 <template>
     <h1>Testimonials</h1>
 
-    <div>
-        <ul>
-            <li>Aaron- Tactical</li>
+    <div class="background-container">
+        <div>Aaron- Tactical</div>
 
-            <li>Katie- Tactical</li>
+        <div>Katie- Tactical</div>
 
-            <li>Kenny- Speed/Sport</li>
+        <div>Kenny- Speed/Sport</div>
 
-            <li>Trevor- Speed/Sport</li>
+        <div>Trevor- Speed/Sport</div>
 
-            <li>Kirsten- Knowledge</li>
+        <div>Kirsten- Knowledge</div>
 
-            <li>Mike- Bodybuilding/Coaching Enthusiasm</li>
+        <div>Mike- Bodybuilding/Coaching Enthusiasm</div>
 
-            <li>Sam/Lonnie</li>
+        <div>Sam/Lonnie</div>
 
-            <li>Greg/Ben</li>
-        </ul>
+        <div>Greg/Ben</div>
     </div>
 </template>
