@@ -1,8 +1,9 @@
 <template>
+	<div class="black-background"></div>
+    <img class="background-image" src="./assets/download.jpeg" />
     <div id="nav">
         <Navigation />
     </div>
-    <img class="background-image" src="./assets/download.jpeg" />
     <router-view />
 </template>
 
@@ -27,10 +28,29 @@ export default class Home extends Vue {}
     color: #2c3e50;
     height: 100vh;
 
-    .background-image {
+	nav {
+		position: absolute;
+		top: 0;
+	}
+
+	.black-background {
+		background: black;
+		position: absolute;
+		left: 0;
+		top: 0;
         height: 100%;
         width: 100%;
-        opacity: 1.2;
+		z-index: -2;
+	}
+
+    .background-image {
+		position: absolute;
+		left: 0;
+		top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+		opacity: 0.6;
     }
 
     /* Rules for sizing the icon. */
