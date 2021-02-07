@@ -5,13 +5,17 @@
 
     <div class="action">
         <div class="call-button-container">
-            <router-link to="/programs">
-                <img class="image" src="../assets/button_fitness.png" />
-            </router-link>
+            <img
+                @click="routeToProgram('fitness')"
+                class="image"
+                src="../assets/button_fitness.png"
+            />
 
-            <router-link to="/programs">
-                <img class="image" src="../assets/button_sport.png" />
-            </router-link>
+            <img
+                @click="routeToProgram('sport')"
+                class="image"
+                src="../assets/button_sport.png"
+            />
         </div>
     </div>
 </template>
@@ -53,14 +57,11 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
         HelloWorld
     },
     methods: {
-        greet() {
-            //router.push(...);
-            // `this` inside methods points to the current active instance
-            //alert('Hello ' + this.name + '!')
-            // `event` is the native DOM event
-            // if (event) {
-            // 	alert(event.target.tagName)
-            // }
+        routeToProgram(programName: string) {
+            this.$router.push({
+                name: 'Programs',
+                params: { program: programName }
+            });
         }
     }
 })
