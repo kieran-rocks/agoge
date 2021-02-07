@@ -1,28 +1,28 @@
 <template>
-	<div class="main-logo">
-		<img class="image" src="../assets/full_logo.png" />
-	</div>
+    <div class="main-logo">
+        <img class="image" src="../assets/full_logo.png" />
+    </div>
 
     <div class="action">
         <div class="call-button-container">
             <router-link to="/programs">
-                <img class="image" src="../assets/button_fit.png" />
+                <img class="image" src="../assets/button_fitness.png" />
             </router-link>
 
             <router-link to="/programs">
-                <img class="image" src="../assets/button_strong.png" />
+                <img class="image" src="../assets/button_sport.png" />
             </router-link>
         </div>
     </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .main-logo {
-	height: 10rem;
+    height: 10rem;
 
-	img {
-		height: 100%;
-	}
+    img {
+        height: 100%;
+    }
 }
 
 .action {

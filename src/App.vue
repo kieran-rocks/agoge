@@ -6,14 +6,6 @@
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-// try black/white for 6+7 (try all in black/white)
-// 1 - okay
-// 2 - meh
-// 3 - nah
-// 4 meh
-// 5 is good in color, bw is okay but maybe not as good  - best
-// 6 - meh - third best
-// 7 - good - second best
 @Options({
     components: {
         HelloWorld
