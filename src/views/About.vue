@@ -3,14 +3,9 @@
         <Navigation />
     </div>
 
-    <div class="about">
-        <h1>Mat</h1>
-        <img alt="Vue logo" src="../assets/mat.jpg" />
-    </div>
-
     <div class="background-container">
         <ul>
-            <li>
+            <div>
                 Agoge Strong Performance Training provides both in-person and
                 remote coaching for individuals looking to get the most out of
                 their life. Whether you are trying to increase performance for
@@ -32,22 +27,24 @@
                 and abroad. At strive to help bring more opportunities for the
                 youth athletes that are currently underserved in the area, to
                 develop into strong athletes of their sport.
-            </li>
+            </div>
 
             <h3>Facilities</h3>
 
-            <li>
+            <div>
                 Private Facility: Our private performance center provides any
                 client the opportunity to train in peace without interruption
                 that you would get in a large commercial gym. Our facility
                 provides our clients with all the tools they will need in order
                 to reach their goals:
-            </li>
-            <li>Photos: TODO</li>
+            </div>
+            <div>Photos: TODO</div>
 
             <h3>Head Coach</h3>
 
-            <li>
+			<img alt="Vue logo" src="../assets/mat.jpg" />
+
+            <div>
                 Head Coach Mat Strong has a variety of experience to pull from
                 in order to help you meet your goals. Mat has experience as a
                 collegiate athlete, being a long-time soccer player as well
@@ -64,13 +61,13 @@
                 undergrad studies on sport psychology studying how psychological
                 skills training can help develop higher levels of performance as
                 well as be a preventative measure against mental illness.
-            </li>
-            <li>
+            </div>
+            <div>
                 Credentials:B.S. Kinesiology University of
                 MarylandNSCA-CSCSUSAW- Sport Performance CoachCrossFit
                 Level-1NASE-CSS Level II NSPA-CCSUS Soccer- E LiscenseCurrently
                 Studying for M.S. in Human Performance and Injury Prevention
-            </li>
+            </div>
         </ul>
     </div>
 </template>
