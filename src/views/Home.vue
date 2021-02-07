@@ -22,6 +22,7 @@
 
     img {
         height: 100%;
+        margin: 2rem 0 0 1.5rem;
     }
 }
 
