@@ -1,18 +1,55 @@
 <template>
-    <div class="home">
-        <HelloWorld />
+    <div class="action">
+        <div class="call-button-container">
+            <router-link to="/programs">
+                <img class="image" src="../assets/health.png" />
+            </router-link>
+
+            <router-link to="/programs">
+                <img class="image" src="../assets/strength.png" />
+            </router-link>
+        </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .call-button-container {
+        height: 25%;
+
+        .image {
+            height: 100%;
+            margin: 0 3rem;
+            background: white;
+        }
+    }
+}
+</style>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
+// import router from '@vue/cli-plugin-router';
 
 @Options({
     components: {
-        HelloWorld,
-        Navigation
+        HelloWorld
+    },
+    methods: {
+        greet() {
+            //router.push(...);
+            // `this` inside methods points to the current active instance
+            //alert('Hello ' + this.name + '!')
+            // `event` is the native DOM event
+            // if (event) {
+            // 	alert(event.target.tagName)
+            // }
+        }
     }
 })
 export default class Home extends Vue {}

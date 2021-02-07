@@ -1,4 +1,8 @@
 <template>
+    <div id="nav">
+        <Navigation />
+    </div>
+
     <div class="about">
         <h1>Mat</h1>
         <img alt="Vue logo" src="../assets/mat.jpg" />
@@ -70,6 +74,18 @@
         </ul>
     </div>
 </template>
+
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
+
+@Options({
+    components: {
+        Navigation
+    }
+})
+export default class About extends Vue {}
+</script>
 
 <style lang="scss" scoped>
 .background-container {

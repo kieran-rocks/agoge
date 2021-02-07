@@ -1,18 +1,15 @@
 <template>
     <img class="background-image" src="./assets/download.jpeg" />
-    <div id="nav">
-        <Navigation />
-    </div>
     <router-view />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
 @Options({
     components: {
-        Navigation
+        HelloWorld
     }
 })
 export default class Home extends Vue {}

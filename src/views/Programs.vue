@@ -1,4 +1,8 @@
 <template>
+    <div id="nav">
+        <Navigation />
+    </div>
+
     <div class="programs">
         <h1>Programs</h1>
         <div class="background-container">
@@ -101,3 +105,15 @@
     }
 }
 </style>
+
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
+
+@Options({
+    components: {
+        Navigation
+    }
+})
+export default class About extends Vue {}
+</script>
