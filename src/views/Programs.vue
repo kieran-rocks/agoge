@@ -3,9 +3,14 @@
         <Navigation />
     </div>
 
+    <div class="program-options">
+        <label class="option" @click="setProgram('fitness')">Fitness</label>
+        <label class="option" @click="setProgram('sport')">Sport</label>
+    </div>
+
     <template v-if="program === 'fitness'">
-        <div class="programs">
-            <h1>Programs</h1>
+        <div class="program-info">
+            <h1>Fitness</h1>
             <div class="background-container">
                 <div>
                     Remote Coaching: Programming delivered to you from Agoge
@@ -105,7 +110,21 @@
 </template>
 
 <style lang="scss" scoped>
-.programs {
+.program-options {
+    .option {
+        color: white;
+        font-weight: 400;
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    // .router-link-active {
+    // 	text-decoration: underline;
+    // }
+}
+
+.program-info {
     padding: 0 2rem;
 
     .background-container {
@@ -123,6 +142,11 @@ import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
         return {
             program: this.$route.params.program
         };
+    },
+    methods: {
+        setProgram(programName: string) {
+            this.program = programName;
+        }
     },
 
     components: {
