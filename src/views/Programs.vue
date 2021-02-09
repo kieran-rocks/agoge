@@ -4,8 +4,16 @@
     </div>
 
     <div class="program-options">
-        <label class="option" @click="setProgram('fitness')">Fitness</label>
-        <label class="option" @click="setProgram('sport')">Sport</label>
+        <label
+            :class="{ selected: isFitnessSelected }"
+            @click="setProgram('fitness')"
+            >Fitness & Health</label
+        >
+        <label
+            :class="{ selected: isSportSelected }"
+            @click="setProgram('sport')"
+            >Sport & Performance</label
+        >
     </div>
 
     <template v-if="program === 'fitness'">
@@ -111,17 +119,18 @@
 
 <style lang="scss" scoped>
 .program-options {
-    .option {
+    label {
         color: white;
         font-weight: 400;
         font-size: 2rem;
         padding: 1rem 3rem;
         cursor: pointer;
         text-decoration: none;
+
+        &.selected {
+            text-decoration: underline;
+        }
     }
-    // .router-link-active {
-    // 	text-decoration: underline;
-    // }
 }
 
 .program-info {
@@ -148,7 +157,14 @@ import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
             this.program = programName;
         }
     },
-
+    computed: {
+        isFitnessSelected() {
+            return this.program === 'fitness';
+        },
+        isSportSelected() {
+            return this.program === 'sport';
+        }
+    },
     components: {
         Navigation
     }
