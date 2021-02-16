@@ -23,10 +23,12 @@
 <style lang="scss">
 .main-logo {
     height: 10rem;
+    width: 100%;
 
     img {
         height: 100%;
-        margin: 2rem 0 0 1.5rem;
+        //max-width: 25%;
+        //min-width: 25rem;
     }
 }
 
@@ -34,13 +36,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 
     .call-button-container {
         height: 25%;
 
         .image {
-            height: 100%;
+            max-width: 20%;
             margin: 0 3rem;
         }
     }

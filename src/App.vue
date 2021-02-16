@@ -1,6 +1,10 @@
 <template>
-    <img class="background-image" src="./assets/gym_photos/gym5_bw.jpg" />
-    <router-view />
+    <div class="bg-container">
+        <!-- <img class="background-image" src="./assets/gym_photos/gym5_bw.jpg" /> -->
+    </div>
+    <div class="overlap">
+        <router-view />
+    </div>
 </template>
 
 <script lang="ts">
@@ -22,20 +26,29 @@ export default class Home extends Vue {}
     text-align: center;
     color: white;
     height: 100vh;
+    background: black;
 
     nav {
         position: absolute;
         top: 0;
     }
 
-    .background-image {
+    .overlap {
         position: absolute;
-        left: 0;
         top: 0;
+        left: 0;
         width: 100%;
-        height: auto;
+    }
+
+    .bg-container {
+        height: 100vh;
+        background-image: url(assets/gym_photos/gym5_bw.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         filter: brightness(50%);
-        z-index: -1;
+        margin: -10px;
     }
 
     /* Rules for sizing the icon. */
