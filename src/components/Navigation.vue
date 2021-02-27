@@ -1,7 +1,7 @@
 <template>
     <div id="navigation">
         <ul>
-            <img alt="Vue logo" src="../assets/shield.png" />
+            <img alt="Vue logo" src="../assets/logo_small.png" />
             <router-link to="/">Home</router-link>
             <router-link to="/about">About</router-link>
             <router-link to="/programs">Programs</router-link>

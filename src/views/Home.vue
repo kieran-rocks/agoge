@@ -36,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 
     .call-button-container {
         height: 25%;
