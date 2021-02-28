@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-container">
-        <!-- <img class="background-image" src="./assets/gym_photos/gym5_bw.jpg" /> -->
-    </div>
+    <div class="bg-color"></div>
+
+    <div class="bg-container"></div>
     <div class="overlap">
         <router-view />
     </div>
@@ -34,10 +34,14 @@ export default class Home extends Vue {}
     }
 
     .overlap {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+        height: 100%;
     }
 
     .bg-container {

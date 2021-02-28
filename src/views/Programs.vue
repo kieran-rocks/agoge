@@ -121,13 +121,16 @@
 }
 
 .program-info {
-    padding: 0 15%;
+    margin: 0 15% 3% 15%;
+    overflow: scroll;
 
     .background-container {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
 
         .bullet {
-            padding-top: 2rem;
+            padding: 1rem 0.5rem;
+            font-size: 1.5rem;
         }
     }
 }
@@ -140,7 +143,7 @@ import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
 @Options({
     data() {
         return {
-            program: this.$route.params.program
+            program: this.$route.params.program || 'fitness'
         };
     },
     methods: {

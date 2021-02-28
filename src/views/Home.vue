@@ -1,6 +1,6 @@
 <template>
     <div class="main-logo">
-        <img class="image" src="../assets/full_logo.png" />
+        <img class="image" src="../assets/logos/low-res/logo_full.png" />
     </div>
 
     <div class="action">
@@ -22,6 +22,7 @@
 
 <style lang="scss">
 .main-logo {
+    padding-top: 0.5rem;
     height: 10rem;
     width: 100%;
 
