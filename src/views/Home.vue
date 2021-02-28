@@ -27,9 +27,8 @@
     width: 100%;
 
     img {
-        height: 100%;
-        //max-width: 25%;
-        //min-width: 25rem;
+        max-height: 100%;
+        max-width: 100%;
     }
 }
 

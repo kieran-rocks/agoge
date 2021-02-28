@@ -1,10 +1,7 @@
 <template>
     <div id="navigation">
         <ul>
-            <img
-                alt="Vue logo"
-                src="../assets/logos/low-res/logo_reduced.png"
-            />
+            <img alt="Agoge" src="../assets/logos/low-res/logo_reduced.png" />
             <router-link to="/">Home</router-link>
             <router-link to="/about">About</router-link>
             <router-link to="/programs">Programs</router-link>
@@ -30,6 +27,7 @@ export default {};
         margin: 0 20px 0 0;
         img {
             width: 4rem;
+            margin-top: -0.5rem;
         }
         a {
             color: white;

@@ -45,7 +45,7 @@
 
                 <h3>Head Coach</h3>
 
-                <img alt="Vue logo" src="../assets/mat.jpg" />
+                <img alt="Mat Strong" src="../assets/mat.jpg" />
 
                 <div>
                     Head Coach Mat Strong has a variety of experience to pull
