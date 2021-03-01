@@ -10,9 +10,14 @@
             >Fitness & Health</label
         >
         <label
-            :class="{ selected: isSportSelected }"
-            @click="setProgram('sport')"
-            >Sport & Performance</label
+            :class="{ selected: isPerformanceSelected }"
+            @click="setProgram('performance')"
+            >Performance</label
+        >
+        <label
+            :class="{ selected: isRatesSelected }"
+            @click="setProgram('rates')"
+            >Rates & Services</label
         >
     </div>
 
@@ -54,7 +59,7 @@
             </div>
         </div>
     </template>
-    <template v-else>
+    <template v-else-if="program === 'performance'">
         <div class="program-info">
             <div class="background-container">
                 <div class="bullet">
@@ -102,12 +107,19 @@
             </div>
         </div>
     </template>
+    <template v-else-if="program === 'rates'">
+        <div class="program-info">
+            <div class="background-container">
+                <div class="bullet"><b>Rates: </b> Show me the money.</div>
+            </div>
+        </div>
+    </template>
 </template>
 
 <style lang="scss" scoped>
 .program-options {
     label {
-        color: white;
+        color: #b86410;
         font-weight: 400;
         font-size: 2rem;
         padding: 1rem 3rem;
@@ -155,8 +167,11 @@ import Navigation from '@/components/Navigation.vue'; // @ is an alias to /src
         isFitnessSelected() {
             return this.program === 'fitness';
         },
-        isSportSelected() {
-            return this.program === 'sport';
+        isPerformanceSelected() {
+            return this.program === 'performance';
+        },
+        isRatesSelected() {
+            return this.program === 'rates';
         }
     },
     components: {

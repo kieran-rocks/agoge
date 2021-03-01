@@ -12,7 +12,7 @@
             />
 
             <img
-                @click="routeToProgram('sport')"
+                @click="routeToProgram('performance')"
                 class="image"
                 src="../assets/button_sport.png"
             />

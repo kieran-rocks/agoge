@@ -46,12 +46,13 @@ export default class Home extends Vue {}
 
     .bg-container {
         height: 100vh;
-        background-image: url(assets/gym_photos/gym5_bw.jpg);
+        // background-image: url(assets/gym_photos/gym5_bw.jpg);
+        background-image: url(assets/bg.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        filter: brightness(50%);
+        //filter: brightness(50%);
         margin: -10px;
     }
 
