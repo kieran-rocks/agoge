@@ -16,8 +16,11 @@ export default {};
 <style lang="scss" scoped>
 #navigation {
     display: flex;
-    width: 100%;
-    margin-bottom: 50px;
+    background: peru;
+    padding-top: 20px;
+    margin: 5px 5px 50px 5px;
+    border-radius: 10px;
+    padding-bottom: 10px;
     ul {
         display: flex;
         list-style: none;

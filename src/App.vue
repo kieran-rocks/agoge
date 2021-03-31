@@ -47,11 +47,11 @@ export default class Home extends Vue {}
     .bg-container {
         height: 100vh;
         // background-image: url(assets/gym_photos/gym5_bw.jpg);
-        background-image: url(assets/bg.png);
+        background-image: url(assets/bg3.jpg);
         background-position: center center;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-attachment: fixed;
-        background-size: cover;
+        //background-size: cover;
         //filter: brightness(50%);
         margin: -10px;
     }
@@ -85,9 +85,5 @@ export default class Home extends Vue {}
     .material-icons.md-light.md-inactive {
         color: rgba(255, 255, 255, 0.3);
     }
-}
-
-#nav {
-    padding: 30px;
 }
 </style>
