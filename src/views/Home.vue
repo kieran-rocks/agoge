@@ -3,6 +3,10 @@
         <img class="image" src="../assets/logos/low-res/logo_full.png" />
     </div>
 
+    <div class="sign-up">
+        <router-link to="/contact">Sign up now</router-link>
+    </div>
+
     <div class="action">
         <div class="call-button-container">
             <img
