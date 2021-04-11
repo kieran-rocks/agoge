@@ -23,7 +23,7 @@
 <style lang="scss">
 .main-logo {
     padding-top: 0.5rem;
-    height: 10rem;
+    height: 30%;
     width: 100%;
 
     img {
@@ -42,7 +42,7 @@
         height: 25%;
 
         .image {
-            max-width: 20%;
+            max-width: 30%;
             margin: 0 3rem;
         }
     }
