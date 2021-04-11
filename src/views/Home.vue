@@ -10,15 +10,15 @@
     <div class="action">
         <div class="call-button-container">
             <img
-                @click="routeToProgram('fitness')"
-                class="image"
-                src="../assets/button_fitness.png"
-            />
-
-            <img
                 @click="routeToProgram('performance')"
                 class="image"
                 src="../assets/button_sport.png"
+            />
+
+            <img
+                @click="routeToProgram('fitness')"
+                class="image"
+                src="../assets/button_fitness_shield.png"
             />
         </div>
     </div>
