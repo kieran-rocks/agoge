@@ -9,10 +9,11 @@
 
     <div class="action">
         <div class="call-button-container">
+            <div class="spacer"></div>
             <img
                 @click="routeToProgram('performance')"
                 class="image"
-                src="../assets/button_sport.png"
+                src="../assets/button_sport_shield.png"
             />
 
             <img
@@ -20,6 +21,7 @@
                 class="image"
                 src="../assets/button_fitness_shield.png"
             />
+            <div class="spacer"></div>
         </div>
     </div>
 </template>
@@ -40,14 +42,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    height: inherit;
 
     .call-button-container {
-        height: 25%;
+        display: flex;
+
+        .spacer {
+            width: 25%;
+        }
 
         .image {
-            max-width: 30%;
+            width: 25%;
+            min-width: 10rem;
             margin: 0 3rem;
+            cursor: pointer;
         }
     }
 }
