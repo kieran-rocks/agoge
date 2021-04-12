@@ -110,7 +110,7 @@
     <template v-else-if="program === 'rates'">
         <div class="program-info">
             <div class="background-container">
-                <div class="bullet"><b>Rates: </b> Show me the money.</div>
+                <div class="bullet"><b>Rates: </b> Coming soon.</div>
             </div>
         </div>
     </template>

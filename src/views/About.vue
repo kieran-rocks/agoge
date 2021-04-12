@@ -104,14 +104,14 @@
                     Our facility provides our clients with all the tools they
                     will need in order to reach their goals:
                 </div>
-                <div>Photos: TODO</div>
+                <div>Photos: Coming soon.</div>
             </div>
         </div>
     </template>
     <template v-else-if="program === 'testimonials'">
         <div class="about">
             <div class="background-container">
-                <h1>todo</h1>
+                <h1>Coming soon.</h1>
             </div>
         </div>
     </template>
